@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+   body {
+       background: #fffcf7;
+   }
+   
+   h1 {
+        text-align: center;
+        color: #55d3d9;
+    }
+
+    h2 {
+        text-align: center;
+        border: 1px dotted #55d3d9;
+        padding: 15px;
+        font-size: 18 px;
+        border-radius: 7px;
+        color: #ffa65b;
+
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+        color: #bd1604;
+    }
+
+    .click-here {
+        color: #ffa65b;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .click-here:hover {
+        text-decoration: underline;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        background: whitesmoke;
+        color: #55d3d9;
+        font-size: 18px;
+        font-size: bold;
+        padding: 16px 24px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer
+    }
+
+.yum {
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px 60px;
+}
+
+.signature {
+    text-align: center;
+}
+
+ </style>
+<body>
+    <div class="container">
+<h1>
+Cereal is great
+</h1>
+<h2>
+    Mixing cereal is even better 🍌
+</h2>
+<img src= "https://blog.trevecca.edu/hs-fs/hubfs/blog-files/National-Cereal-Day-Blog.png?width=1290&height=612&name=National-Cereal-Day-Blog.png" alt="fruity pebbles and cheerios cereal"/>
+<p class=yum>
+    Cereal is your friend but mixing cereal is your best friend. Next time you grab a bowl dont be afraid to get creative! My favorite combination is fruity pebbles, cinnammon toast crunch with honey on top and banana sliced in. 
+</p>
+<a class="click-here" href ="https://blog.trevecca.edu/thehill/five-cereal-combinations-that-will-change-your-life" target="_blank">
+    Learn more on Trevecca Blog
+</a>
+</p>
+<button class="mix-button">
+    Create your cereal mix
+</button>
+<p class=signature>
+    Coded by Danielle Jagendorf
+</p>
+</div>
+<script>
+    function mix() {
+        let name= prompt("what is your name?");
+        let cereal= prompt("What is your favorite cereal?");
+        let fruit= prompt("What is your favorite fruit?");
+        alert("Sounds yum, " + name + "! Try mixing " + "cereal" + " and " + fruit + " together!🥣");
+    }
+
+    let mixButton= document.querySelector(".mix-button");
+    mixButton.addEventListener("click", mix);
+
+    </script>
+</body>
+</html>
